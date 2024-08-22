@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard-style.css">
+    <title>LLT Dashboard</title>
+
+/* Add any additional styling as needed */
+<style>
+        body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #333; /* Adjust background color as needed */
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: white;
+    color: navy;
+}
+
+.navbar a:first-child {
+    margin-left: 20px; /* Add margin to the first link for spacing */
+}
+
+.header-container {
+    padding: 80px 20px 20px;
+}
+
+
+.courses-container {
+    display: flex;
+    flex-wrap:wrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+/* Add any additional styling as needed */
+.course {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 100px 100px 0; /* Equal margins on all sides, adjust as needed */
+    width: 300px;
+}
+
+.course img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+.course h2 {
+    margin: 15px 0;
+    color: #333333;
+}
+
+.course p {
+    color: #555555;
+    margin: 0;
+    padding: 0 20px 20px;
+}
+
+.course a {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 0 0 8px 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.course a:hover {
+    background-color: #45a049;
+}
+/* Add this style for the left GIF */
+/* Add this style for the right GIF */
+.right-gif {
+    position:fixed;
+    top: 75%;
+    right: 20px; /* Adjust the right distance as needed */
+    transform: translateY(-50%);
+    width: 300px; /* Adjust the width as needed */
+    height: 500px; /* Maintain aspect ratio */
+    z-index: 100; /* Ensure the GIF appears above other elements */
+}
+
+
+
+    </style>
+
+</head>
+<body>
+
+    
+    <div class="navbar" style="border:4px solid white; background-color: white; color: navy;">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Courses</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
+    <div class="header-container">
+        <h1 class="h1" style="text-align: center;">Welcome to the Let's Learn Technologies</h1>
+        <h2 class="h2" style="text-align: center;">Explore and enroll in courses to enhance your skills!</h2>
+    </div>
+
+    <!-- GIF on the left side -->
+<img src="images/man.gif" alt="Your GIF Alt Text" class="right-gif">
+
+
+    <!-- Rest of your HTML content -->
+
+    <div class="highlighted-section">
+        <section class="courses-container" id="coursesContainer">
+            <!-- Course cards will be dynamically added here using JavaScript -->
+        </section>
+    </div>
+
+    <script src="dashboard-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Let's Learn Technologies</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('images/texture.jpg');
+            background-size: 100%; /* Set your desired background color */ /* Set your desired background color */
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            display: flex;
+            background-color: #333; /* Background color for the navbar */
+            padding: 10px; /* Adjust the padding as needed */
+            justify-content: space-around;
+            border-bottom: 2px solid white; /* White border at the bottom of the navbar */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid white; /* White border around each navbar link */
+            padding: 8px; /* Adjust the padding as needed */
+            border-radius: 5px; /* Optional: Add border radius for a rounded look */
+        }
+
+        .nav-link:hover {
+            background-color: white;
+            color: #333; /* Change the text color on hover */
+        }
+
+        /* Contact page content styles */
+        .contact-container {
+            padding: 80px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .contact-tile {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 50%; /* Set width to 100% for each tile to appear on a separate row */
+            text-align: center;
+        }
+
+        .contact-tile h1 {
+            color: #333333;
+        }
+
+        .contact-details {
+            color: #555555;
+            margin: 15px 0;
+        }
+
+        .email-link {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar from dashboard.html -->
+    <div class="navbar">
+        <a class="nav-link" href="index.html">Login</a>
+        <a class="nav-link" href="dashboard.html">Courses</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+    </div>
+
+    <!-- Contact page content -->
+    <div class="contact-container">
+        <!-- Additional Information tile -->
+        <div class="contact-tile">
+            <h1>Additional Information</h1>
+            <p class="contact-details">Feel free to reach out to us for any inquiries or collaboration opportunities. We are here to help!</p>
+        </div>
+
+        <!-- Shivansha's tile -->
+        <div class="contact-tile">
+            <h1>Shivansha Jamuar</h1>
+            <p class="contact-details">Mobile Number: +91xxxxxxxxx</p>
+            <p class="contact-details">Email: <a href="mailto:shivansha@example.com" class="email-link">shivansha@example.com</a></p>
+        </div>
+
+        <!-- Shivam's tile -->
+        <div class="contact-tile">
+            <h1>Shivam Singh</h1>
+            <p class="contact-details">Mobile Number: +91xxxxxxxxx</p>
+            <p class="contact-details">Email: <a href="mailto:shivam@example.com" class="email-link">shivam@example.com</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
